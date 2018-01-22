@@ -4,5 +4,23 @@
       <div style="width: 500px; margin: 0 auto; background: #000; color: #fff;">This DIV is centered</div>
     </div>  
 
-  
+#header
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<table border="0" style="border-collapse: collapse"  " width="100%">
+    <tr>
+		<td style="background-size: contain;" bgcolor="#c8cace">
+			<a href=".\indexx.html"> <img alt="" src="./phplogo.png" width="121" height="52" > <a href="/foro/"></a>
+			<a href=".\Insertar departamento.html">Insertar un nuevo departamento</a> |
+			<a href=".\Introducir empleado departamento.html">Insertar un empleado dado un departamento</a> | 
+			<a href=".\Dar de baja empleado.html">Dar de baja un empleado dado su código</a>
+		</td> 
+    </tr>
+</table>
+
+</body>
+</html>
 
