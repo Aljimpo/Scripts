@@ -1,0 +1,2 @@
+
+El empleado con apellido: aa, cuyo oficio es: a, que se dio de alta en: 2018-01-02, cuyo departamento era: comercial, ha sido eliminado.

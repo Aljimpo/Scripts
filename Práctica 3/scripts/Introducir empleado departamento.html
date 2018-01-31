@@ -1,0 +1,78 @@
+﻿
+<html>
+	<head>
+	<meta charset="ISO-8859-1">
+	<meta charset="utf-8">
+<!-- Para estilizar la pagina html utilizo css y no el propio html porque me das mas posibilidades a la hora de estilizarla y queda mejor.--> 
+		<style type="text/css">
+			*		{
+					margin:3px;
+					padding:3px;
+					}
+			body	{
+					Background:url(emp3.jpg) #F8F8F8;
+					}
+			h3		{
+					Background:#F8F8F8;	
+					width:360px;
+					border:1px solid #A8928D;
+					}
+			form	{
+					Background:#F8F8F8;	
+					width:360px;
+					border:1px solid #A8928D;
+					}
+			form td { 
+					width:280px;
+					height:35px;		
+					padding:0px 10px;
+					color:#000000;
+					text-align:left;		
+					}
+		</style>
+	</head>
+	
+	<body>
+		<meta charset="utf-8">
+			<p><h3>Introducir empleado en la Base de datos:</h3></p>
+	<!-- Utilizo el metodo post porque es mas seguro que el metodo get.-->
+				<form action="Introducir empleado departamento.php" method="POST">
+					<table>
+						<tr>
+	<!-- Creo las restricciones de introducción de datos en el html y no en php ya que así es mas facil y eficaz -->
+							<td align="left">Número de empleado:</td>
+							<td align="left"><input type="number" name="emp_no" min="1" max="9999" required /></td>
+						</tr>
+						<tr>
+							<td align="left">Apellido:</td>
+							<td align="left"><input type="text" name="apellido" minlength="1" maxlength="10" required pattern="[A-Za-z]+"/></td>
+						</tr>
+						<tr>
+							<td align="left">Oficio:</td>
+							<td align="left"><input type="text" name="oficio" minlength="1" maxlength="10" required pattern="[A-Za-z]+"/></td>
+						</tr>
+						<tr>
+							<td align="left">Dirección:</td>
+							<td align="left"><input type="number" name="dir"  min="1" max="999999" required /></td>
+						</tr>
+						<tr>
+							<td align="left">Fecha de alta:</td>
+							<td align="left"><input type="date" name="fecha_alt" min="1900-01-01" max="2018-12-31" step="2" required /></td>
+						</tr>
+						<tr>
+							<td align="left">Salario:</td>
+							<td align="left"><input type="number" name="salario" min="1" max="999999" step="0.01" required /></td>
+						</tr>
+						<tr>
+							<td align="left">Comisión:</td>
+							<td align="left"><input type="number" name="comision" min="1" max="999999" step="0.01" required /></td>
+						</tr>
+						<tr>
+							<td align="left">Número de departamento:</td>
+							<td align="left"><input type="number" name="dept_no" min="1" max="99" required /></td>
+						</tr>
+					</table>
+				<input type="submit" name="envia" value="Enviar">
+			</form>
+	</body>
+</html>
